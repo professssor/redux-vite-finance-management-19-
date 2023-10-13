@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { addIncome, fetchIncome } from "../Actions/IncomeAction";
+import Dashboard from "./Dashboard";
 
 const cardStyle = {
   backgroundColor: "#272829",
@@ -100,6 +101,7 @@ const Income = () => {
 
   return (
     <div className="income-container" style={transform}>
+      <Dashboard />
       <h1>Income Management</h1>
 
       <div>

@@ -1,6 +1,7 @@
 import { useDispatch, useSelector } from "react-redux";
 import { addSaving, fetchSavings } from "../Actions/savingAction";
 import { useState, useEffect } from "react";
+import Dashboard from "./Dashboard";
 
 const cardStyle = {
   backgroundColor: "#272829",
@@ -103,6 +104,7 @@ const Savings = () => {
 
   return (
     <div className="savings-container" style={transform}>
+      <Dashboard />
       <h1>Savings Management</h1>
 
       <div>

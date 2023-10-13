@@ -5,6 +5,7 @@
 import { useDispatch, useSelector } from "react-redux";
 import { addExpense, fetchExpense } from "../Actions/expenseAction";
 import React, { useEffect, useState } from "react";
+import Dashboard from "./Dashboard";
 
 const cardStyle = {
   backgroundColor: "#272829",
@@ -106,6 +107,7 @@ const Expenses = () => {
 
   return (
     <div className="expenses-container" style={transform}>
+      <Dashboard />
       <h1>Expense Management</h1>
 
       <div>

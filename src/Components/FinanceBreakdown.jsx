@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { fetchExpense } from "../Actions/expenseAction";
 import { fetchIncome } from "../Actions/IncomeAction";
 import { fetchSavings } from "../Actions/savingAction";
+import Dashboard from "./Dashboard";
 
 function FinanceBreakdown() {
   const dispatch = useDispatch();
@@ -78,6 +79,7 @@ function FinanceBreakdown() {
   return (
     <div>
       <h2>Finance Breakdown</h2>
+      <Dashboard />
       <label>Select a report type:</label>
       <select onChange={handleSelectChange} value={selectedOption}>
         <option value="incomeVsExpenses">Income vs. Expenses</option>
